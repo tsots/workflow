@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="off-canvas-wrapper" data-off-canvas>
+  <div class="off-canvas position-left reveal-for-medium" id="offCanvas" data-off-canvas data-transition="overlap">
+      <!-- Your menu or Off-canvas content goes here -->
+      <ul class="menu vertical">
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
+        <li><a style="padding:0;" href="/"><img src="https://via.placeholder.com/350x250" alt=""></a></li>
+        <li {{#if index}}class="active" {{/if}}><a href="/">Home</a></li>
+        <li {{#if identity}}class="active" {{/if}}><a href="/design">Identity Design</a></li>
+        <li {{#if digital}}class="active" {{/if}}><a href="/digital">Digital Design</a></li>
+        <li><a href="/blog">Our Blog</a></li>
+        <li {{#if contact}}class="active" {{/if}}><a href="/contact">Contact us</a></li>
+      </ul>
+  </div>
+  <div class="off-canvas-content" data-off-canvas-content>
+      <button type="button" class="button hide-for-medium" data-toggle="offCanvas">
+        <a href="" class="menu-icon"></a>
+      </button>
+  
+      <div class="grid-container">
+        <h1>Phephi, Naobane</h1>
+
+  <ul class="character-list-container"></ul>
+    <script id="character-template" type="text/x-handlebars-template">
+      {{#characters}}
+        <li class="character">
+        {{name}} {{surname}}
+      </li>
+      {{/characters}}
+    </script>
+      </div>
+
+    <script src="js/scripts.js"></script>
+      </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "workflow",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tsotetsi Mosala"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.5.1",
+    "handlebars": "^4.0.12"
+  }
+}
